@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+
+
+<body>
+    <h1>Homepage</h1>
+
+    <!-- <a> anchor element. It wraps the text or another HTML element we want to be a link. the anchor element by itself does nothing. -->
+        <!-- for a link to work, we add href (hypertext reference) and the value which is the link -->
+    <!-- an HTML attribute gives additional info to an HTML element and always goes in the element's opening tag. -->
+     <!-- an attibute is made of: a name, and a value. not all elements require a value. -->
+
+        <p><a href="https://www.theodinproject.com/about">About The Odin Project</a></p>
+
+        <!-- it's important to add the https:// so that it knows it's an absolute path, meaning it's exactly that link. If not, it will think it's a relative path and will look for a file within the current directory with that name. -->
+
+    <!-- To make a link open in a new tab, we add the target attribute. by default, the target is _self. for a new tab is _blank -->
+
+        <p><a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project (New Tab) </a></p>
+
+        <!-- rel attribute describes the relation between the current page and linked document. -->
+
+         <!-- noopener value ensures that a link opened in a new tab cannot interact with or access the original page. Without it, the new page can use JavaScript to manipulate the original page. -->
+
+        <!-- noreferrer value provides both privacy and security. it prevents the new page from knowing where the user came from (hiding the referrer) and also includes the behavior of noopener, preventing the new page from accessing the original page. -->
+
+        <!-- ALWYAYS USE THE NOOPENER NOREFERRER COMBO FOR SECURITY AND GOOD CODING PRACTICES! -->
+    
+    <!-- Absolute links are links to pages on other websites. they will have scheme://domain/path.  -->
+    <!-- Relative links are links to other pages within our own website. these do not include the domain name. -->
+
+        <p><a href="./pages/about.html">About</a>
+
+            <!-- this works (opens the about html file) because it is in the same directory as this file. -->
+             <!-- the index file should be alone in this directory as a file. Other pages should be in a directory to keep things organized. when doing this, you need to add the directory in the "address" so that the browser knows where to look. even better, add the "./" so that it knows is relative to the current directory. -->
+
+        <p><img src="./images/dog.jpg" alt="Image of the dog Charles" height="310" width="310"></p>
+
+        <!-- alt attribute is just alternative text to describe de image. -->
+        <!-- you can add (and you should) the height and  width of an image here, even if the image is already in the correct size and even if you're going to use CSS to modify it. -->
+    
+</body>
+</html>
